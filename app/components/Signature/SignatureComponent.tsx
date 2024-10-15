@@ -19,8 +19,12 @@ export default function SignatureComponent(data: Signature) {
             </td>
 
             <td className="pl-4">
-              <p className="text-lg font-bold">{data.name ? data.name : 'Nombre'}</p>
-              <p className="mb-2">{data.position ? data.position : 'Posición'}</p>
+              <p className="text-lg text-[#799D6D] font-bold">
+                {data.name ? data.name : "Nombre"}
+              </p>
+              <p className="mb-2 text-[#799D6D]">
+                {data.position ? data.position : "Posición"}
+              </p>
 
               <a
                 href="mailto:mcorrea@treasurefamilyapp.com"
@@ -33,7 +37,7 @@ export default function SignatureComponent(data: Signature) {
                   height={16}
                   className="object-contain"
                 />
-                <p className="  text-blue-500">{data.email}</p>
+                <p className="font-medium  text-blue-500">{data.email}</p>
               </a>
 
               <a
@@ -47,7 +51,9 @@ export default function SignatureComponent(data: Signature) {
                   height={16}
                   className="object-contain"
                 />
-                <p className="ftext-blue-500">treasurefamilyapp.com</p>
+                <p className="font-medium text-blue-500">
+                  treasurefamilyapp.com
+                </p>
               </a>
 
               <a
@@ -61,7 +67,7 @@ export default function SignatureComponent(data: Signature) {
                   height={16}
                   className="object-contain"
                 />
-                <p className="text-[#D8583F]">@treasurefamilyapp</p>
+                <p className="font-medium text-[#D8583F]">@treasurefamilyapp</p>
               </a>
             </td>
           </tr>
